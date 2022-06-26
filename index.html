@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Escola Mar Azul</h1>
+    </header>
+    <div class="button-wrap">
+        <button class="add-aluno">Adiconar Aluno</button>
+    </div>
+    <div class="alunos">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matrícula</th>
+                    <th>Série</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </div>
+    <div class="conteiner-modal">
+        <div class="modal">
+            <h3>Novo Aluno</h3>
+            <form class="novo">
+                <div class="input-box">
+                    <input class="form-input" type="text" placeholder=" " id="nome">
+                    <label class="form-label" for="">Nome</label>
+                    <i class="fa-solid fa-circle-exclamation" id="icone-error"></i>
+                </div>
+                <div class="input-box">
+                    <input class="form-input" type="text" placeholder=" " id="matricula">
+                    <label class="form-label" for="">Matrícula</label>
+                    <i class="fa-solid fa-circle-exclamation" id="icone-error"></i>
+                </div>
+                <div class="input-box">
+                    <input class="form-input" type="text" placeholder=" " id="serie">
+                    <label class="form-label" for="">Série</label>
+                    <i class="fa-solid fa-circle-exclamation" id="icone-error"></i>
+                </div>
+            </form>
+            <button id="add">Adicionar</button>
+            <button class="fechar">X</button>
+        </div>
+        <div class="modal-editar">
+            <h3>Editar Aluno</h3>
+            <form class="novo">
+                <div class="input-box">
+                    <input class="form-input" type="text" placeholder=" " id="nomeEditar">
+                    <label class="form-label" for="">Nome</label>
+                    <i class="fa-solid fa-circle-exclamation" id="icone-error"></i>
+                </div>
+                <div class="input-box">
+                    <input class="form-input" type="text" placeholder=" " id="matriculaEditar">
+                    <label class="form-label" for="">Matrícula</label>
+                    <i class="fa-solid fa-circle-exclamation" id="icone-error"></i>
+                </div>
+                <div class="input-box">
+                    <input class="form-input" type="text" placeholder=" " id="serieEditar">
+                    <label class="form-label" for="">Série</label>
+                    <i class="fa-solid fa-circle-exclamation" id="icone-error"></i>
+                </div>
+            </form>
+            <button id="ed">Editar</button>
+            <button class="fechar">X</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"> </script>
+</html>
